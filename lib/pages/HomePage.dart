@@ -15,9 +15,10 @@ class HomePage extends StatelessWidget {
           child: Column(
         children: <Widget>[
           Container(
-            child: Image(image: AssetImage('assets/images/aykutasil.jpg'))
+            child: Image(image: AssetImage('assets/images/aykutasil.jpg')),
           ),
-          Text(appState.isDarkTheme() ? "isDarkkkk" : "isLight"),
+          SizedBox(height: 100),
+          Text(appState.isDarkTheme() ? "isDark" : "isLight"),
         ],
       )),
       floatingActionButton: FloatingActionButton(

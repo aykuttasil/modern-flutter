@@ -8,6 +8,7 @@ final darkTheme = ThemeData(
   accentColor: Colors.white,
   accentIconTheme: IconThemeData(color: Colors.black),
   dividerColor: Colors.black12,
+  fontFamily: "Poppins",
 );
 
 final lightTheme = ThemeData(
@@ -18,4 +19,5 @@ final lightTheme = ThemeData(
   accentColor: Colors.black,
   accentIconTheme: IconThemeData(color: Colors.white),
   dividerColor: Colors.white54,
+  fontFamily: "Poppins",
 );

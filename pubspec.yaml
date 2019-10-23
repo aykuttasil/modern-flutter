@@ -19,6 +19,9 @@ dependencies:
   dio: 2.1.16
   alice: ^0.0.13
   flutter_local_notifications: ^0.8.2
+  flutter_screenutil: 0.5.3
+  path_provider: ^1.4.0
+  path: ^1.6.4
 
 dev_dependencies:
   flutter_test:
@@ -28,3 +31,13 @@ flutter:
   uses-material-design: true
   assets:
     - assets/images/
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/poppin/Poppins-Black.ttf
+        - asset: assets/fonts/poppin/Poppins-Bold.ttf
+        - asset: assets/fonts/poppin/Poppins-Light.ttf
+        - asset: assets/fonts/poppin/Poppins-Medium.ttf
+        - asset: assets/fonts/poppin/Poppins-Regular.ttf
+        - asset: assets/fonts/poppin/Poppins-SemiBold.ttf
+        - asset: assets/fonts/poppin/Poppins-Thin.ttf
