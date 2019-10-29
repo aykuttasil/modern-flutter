@@ -22,6 +22,11 @@ dependencies:
   flutter_screenutil: 0.5.3
   path_provider: ^1.4.0
   path: ^1.6.4
+  firebase_core: ^0.4.0+9
+  firebase_analytics: ^5.0.2
+  firebase_crashlytics: ^0.1.0+3
+  cloud_firestore: ^0.12.9+5
+  location: ^2.3.5
 
 dev_dependencies:
   flutter_test:
