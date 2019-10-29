@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "381782928419",
+    "firebase_url": "https://modern-flutter-47b94.firebaseio.com",
+    "project_id": "modern-flutter-47b94",
+    "storage_bucket": "modern-flutter-47b94.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:381782928419:android:ba3045e17c3c220af9d596",
+        "android_client_info": {
+          "package_name": "com.aykuttasil.modern_flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "381782928419-ehfj6o5d2810b11qmffk15cf02ujdq43.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEErtm0WOYgC6XiDWMSDs-A1CMj4S5cs0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "381782928419-ehfj6o5d2810b11qmffk15cf02ujdq43.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
