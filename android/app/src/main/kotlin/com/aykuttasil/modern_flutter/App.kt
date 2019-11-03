@@ -23,7 +23,7 @@ class App : FlutterApplication() {
         return this.mCurrentActivity
     }
 
-    override fun setCurrentActivity(mCurrentActivity: Activity) {
+    override fun setCurrentActivity(mCurrentActivity: Activity?) {
         this.mCurrentActivity = mCurrentActivity
     }
 
