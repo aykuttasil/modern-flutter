@@ -18,12 +18,8 @@ void main() {
   runZoned<Future<void>>(() async {
     runApp(MultiProvider(
       providers: [
-        ChangeNotifierProvider(
-          builder: (_) => AppState(),
-        ),
-        Provider<FirebaseAnalytics>(
-          builder: (_) => FirebaseAnalytics(),
-        ),
+        ChangeNotifierProvider(builder: (_) => AppState()),
+        Provider<FirebaseAnalytics>(builder: (_) => FirebaseAnalytics()),
         ProxyProvider<FirebaseAnalytics, FirebaseAnalyticsObserver>(
           builder: (context, analytics, analyticsObserver) =>
               FirebaseAnalyticsObserver(analytics: analytics),
