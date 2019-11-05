@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class AppState with ChangeNotifier {
+class AppViewModel with ChangeNotifier {
 
   bool _isDarkTheme = false;
 
