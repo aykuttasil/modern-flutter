@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:modern_flutter/common/locator.dart';
+import 'package:modern_flutter/common/logger.dart';
 import 'package:modern_flutter/ui/AppViewModel.dart';
 import 'package:modern_flutter/ui/about/AboutPage.dart';
 import 'package:modern_flutter/ui/home/HomeViewModel.dart';
-import 'package:modern_flutter/locator.dart';
 import 'package:provider/provider.dart';
 
 class HomePage extends StatelessWidget {
@@ -10,6 +11,7 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    logger.d("HomePage build.");
     final appState = Provider.of<AppViewModel>(context, listen: false);
 
     return ChangeNotifierProvider(

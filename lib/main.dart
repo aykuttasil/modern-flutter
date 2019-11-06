@@ -4,7 +4,7 @@ import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:flutter/material.dart';
 import 'package:modern_flutter/ui/App.dart';
 import 'package:modern_flutter/ui/AppViewModel.dart';
-import 'package:modern_flutter/locator.dart';
+import 'package:modern_flutter/common/locator.dart';
 import 'package:provider/provider.dart';
 
 void main() {

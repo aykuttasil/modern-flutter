@@ -28,6 +28,7 @@ dependencies:
   firebase_crashlytics: ^0.1.0+3
   cloud_firestore: ^0.12.9+5
   location: ^2.3.5
+  logger: ^0.7.0+2
 
 dev_dependencies:
   flutter_test:
