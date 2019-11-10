@@ -1,6 +1,6 @@
-import 'package:flutter/material.dart';
+import 'package:modern_flutter/ui/base/base_viewmodel.dart';
 
-class HomeViewModel with ChangeNotifier {
+class HomeViewModel extends BaseViewModel {
   String name = "Aykut Asil";
 
   void changeName() {
@@ -9,6 +9,11 @@ class HomeViewModel with ChangeNotifier {
     } else {
       name = "Aykut Asil";
     }
-    notifyListeners();
+
+    setState(ViewState.LOADING);
+    Future.delayed(Duration(seconds: 3)).then((_) {
+      setState(ViewState.IDLE);
+      // notifyListeners();
+    });
   }
 }
