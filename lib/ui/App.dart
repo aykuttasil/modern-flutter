@@ -21,7 +21,7 @@ class App extends StatelessWidget {
           title: 'Modern Flutter',
           theme: appState.isDarkTheme() ? darkTheme : lightTheme,
           initialRoute: SplashPage.routeName,
-          // onGenerateRoute: Router.generateRoute,
+           // onGenerateRoute: Router.generateRoute,
           routes: {
             SplashPage.routeName: (context) => SplashPage(),
             HomePage.routeName: (context) => HomePage(),
