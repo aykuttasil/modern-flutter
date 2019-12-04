@@ -1,4 +1,4 @@
-import 'package:modern_flutter/ui/base/base_viewmodel.dart';
+import 'package:modern_flutter/ui/base/BaseViewmodel.dart';
 
 class HomeViewModel extends BaseViewModel {
   String name = "Aykut Asil";
@@ -10,9 +10,9 @@ class HomeViewModel extends BaseViewModel {
       name = "Aykut Asil";
     }
 
-    setState(ViewState.LOADING);
+    setViewState(ViewState.LOADING);
     Future.delayed(Duration(seconds: 3)).then((_) {
-      setState(ViewState.IDLE);
+      setViewState(ViewState.IDLE);
       // notifyListeners();
     });
   }

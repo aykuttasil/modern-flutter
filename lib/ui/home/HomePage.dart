@@ -3,8 +3,8 @@ import 'package:modern_flutter/common/locator.dart';
 import 'package:modern_flutter/common/logger.dart';
 import 'package:modern_flutter/ui/AppViewModel.dart';
 import 'package:modern_flutter/ui/about/AboutPage.dart';
-import 'package:modern_flutter/ui/base/base_page.dart';
-import 'package:modern_flutter/ui/base/base_viewmodel.dart';
+import 'package:modern_flutter/ui/base/BasePage.dart';
+import 'package:modern_flutter/ui/base/BaseViewmodel.dart';
 import 'package:modern_flutter/ui/home/HomeViewModel.dart';
 import 'package:provider/provider.dart';
 

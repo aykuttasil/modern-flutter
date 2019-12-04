@@ -9,7 +9,7 @@ abstract class BaseViewModel with ChangeNotifier {
 
   get viewStateStream => _streamController.stream;
 
-  void setState(ViewState state) {
+  void setViewState(ViewState state) {
     _streamController.sink.add(state);
   }
 
