@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 
 final darkTheme = ThemeData(
   primarySwatch: Colors.grey,
@@ -20,4 +21,8 @@ final lightTheme = ThemeData(
   accentIconTheme: IconThemeData(color: Colors.white),
   dividerColor: Colors.white54,
   fontFamily: "Poppins",
+  buttonTheme: ButtonThemeData(
+    buttonColor: Colors.brown,
+    textTheme: ButtonTextTheme.primary,
+  ),
 );
