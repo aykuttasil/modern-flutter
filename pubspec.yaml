@@ -29,6 +29,7 @@ dependencies:
   cloud_firestore: ^0.12.9+5
   location: ^2.3.5
   logger: ^0.7.0+2
+  flutter_svg: ^0.15.0
 
 dev_dependencies:
   flutter_test:
@@ -37,7 +38,9 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
+    - assets/
     - assets/images/
+    - assets/svg/
   fonts:
     - family: Poppins
       fonts:
