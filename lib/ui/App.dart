@@ -5,6 +5,7 @@ import 'package:modern_flutter/common/locator.dart';
 import 'package:modern_flutter/ui/AppViewModel.dart';
 import 'package:modern_flutter/ui/about/AboutPage.dart';
 import 'package:modern_flutter/ui/home/HomePage.dart';
+import 'package:modern_flutter/ui/intro/IntroPage.dart';
 import 'package:modern_flutter/ui/splash/SplashPage.dart';
 import 'package:modern_flutter/utils/routes/FadeRoute.dart';
 import 'package:provider/provider.dart';
@@ -20,9 +21,10 @@ class App extends StatelessWidget {
         return MaterialApp(
           title: 'Modern Flutter',
           theme: appState.isDarkTheme() ? darkTheme : lightTheme,
-          initialRoute: SplashPage.routeName,
+          initialRoute: IntroPage.routeName,
           // onGenerateRoute: Router.generateRoute,
           routes: {
+            IntroPage.routeName: (context) => IntroPage(),
             SplashPage.routeName: (context) => SplashPage(),
             HomePage.routeName: (context) => HomePage(),
             AboutPage.routeName: (context) => AboutPage(),
