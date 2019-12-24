@@ -5,7 +5,9 @@ import 'package:modern_flutter/common/locator.dart';
 import 'package:modern_flutter/ui/AppViewModel.dart';
 import 'package:modern_flutter/ui/about/AboutPage.dart';
 import 'package:modern_flutter/ui/home/HomePage.dart';
-import 'package:modern_flutter/ui/intro/IntroPage.dart';
+import 'package:modern_flutter/ui/intro/intro_page.dart';
+import 'package:modern_flutter/ui/login/login_page.dart';
+import 'package:modern_flutter/ui/intro/intro_page_2.dart';
 import 'package:modern_flutter/ui/splash/SplashPage.dart';
 import 'package:modern_flutter/utils/routes/FadeRoute.dart';
 import 'package:provider/provider.dart';
@@ -25,9 +27,11 @@ class App extends StatelessWidget {
           // onGenerateRoute: Router.generateRoute,
           routes: {
             IntroPage.routeName: (context) => IntroPage(),
+            IntroPage2.routeName: (context) => IntroPage2(),
             SplashPage.routeName: (context) => SplashPage(),
             HomePage.routeName: (context) => HomePage(),
             AboutPage.routeName: (context) => AboutPage(),
+            LoginPage.routeName: (context) => LoginPage(),
           },
           navigatorObservers: [firebaseAnalyticsObserver],
         );

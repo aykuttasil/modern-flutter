@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:modern_flutter/ui/home/HomePage.dart';
+import 'package:modern_flutter/ui/login/login_page.dart';
 import 'package:modern_flutter/ui/widgets/MyButton.dart';
 
 class IntroPage extends StatefulWidget {
@@ -75,6 +76,13 @@ class _IntroPageState extends State<IntroPage> {
                       onPressed: () {
                         Navigator.pushReplacementNamed(
                             context, HomePage.routeName);
+                      },
+                    ),
+                    MyButton(
+                      title: "LOGIN",
+                      onPressed: () {
+                        Navigator.pushReplacementNamed(
+                            context, LoginPage.routeName);
                       },
                     ),
                   ],
