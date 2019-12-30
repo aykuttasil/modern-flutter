@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 class AppViewModel with ChangeNotifier {
-
   bool _isDarkTheme = false;
 
   bool isDarkTheme() => _isDarkTheme;
@@ -10,5 +9,4 @@ class AppViewModel with ChangeNotifier {
     _isDarkTheme = isDark;
     notifyListeners();
   }
-
 }

@@ -17,7 +17,7 @@ class HomePage extends BasePage {
     final appState = Provider.of<AppViewModel>(context, listen: false);
 
     return ChangeNotifierProvider(
-      builder: (_) => locator<HomeViewModel>(),
+      create: (context) => locator<HomeViewModel>(),
       child: Consumer<HomeViewModel>(
         builder: (context, viewModel, child) {
           return StreamBuilder<ViewState>(

@@ -14,7 +14,7 @@ void main() {
   runZoned<Future<void>>(() async {
     runApp(MultiProvider(
       providers: [
-        ChangeNotifierProvider(builder: (_) => locator<AppViewModel>()),
+        ChangeNotifierProvider(create: (_) => locator<AppViewModel>()),
       ],
       child: App(),
     ));
