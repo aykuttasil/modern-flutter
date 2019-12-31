@@ -20,7 +20,7 @@ dependencies:
   dio: 2.1.16
   alice: ^0.0.13
   flutter_local_notifications: ^0.8.2
-  flutter_screenutil: 0.5.3
+  flutter_screenutil: ^0.6.0
   path_provider: ^1.4.0
   path: ^1.6.4
   firebase_core: ^0.4.0+9
@@ -30,6 +30,7 @@ dependencies:
   location: ^2.3.5
   logger: ^0.7.0+2
   flutter_svg: ^0.15.0
+  polygon_clipper: ^1.0.2
 
 dev_dependencies:
   flutter_test:
