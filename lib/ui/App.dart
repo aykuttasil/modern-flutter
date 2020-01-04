@@ -1,13 +1,15 @@
 import 'package:firebase_analytics/observer.dart';
 import 'package:flutter/material.dart';
-import 'package:modern_flutter/common/themes.dart';
 import 'package:modern_flutter/common/locator.dart';
+import 'package:modern_flutter/common/themes.dart';
 import 'package:modern_flutter/ui/AppViewModel.dart';
 import 'package:modern_flutter/ui/about/AboutPage.dart';
 import 'package:modern_flutter/ui/home/HomePage.dart';
 import 'package:modern_flutter/ui/intro/intro_page.dart';
-import 'package:modern_flutter/ui/login/login_page.dart';
 import 'package:modern_flutter/ui/intro/intro_page_2.dart';
+import 'package:modern_flutter/ui/login/login_page.dart';
+import 'package:modern_flutter/ui/login/login_page_2.dart';
+import 'package:modern_flutter/ui/login/login_page_3.dart';
 import 'package:modern_flutter/ui/splash/SplashPage.dart';
 import 'package:modern_flutter/utils/routes/FadeRoute.dart';
 import 'package:provider/provider.dart';
@@ -23,7 +25,7 @@ class App extends StatelessWidget {
         return MaterialApp(
           title: 'Modern Flutter',
           theme: appState.isDarkTheme() ? darkTheme : lightTheme,
-          initialRoute: IntroPage.routeName,
+          initialRoute: LoginPage3.routeName,
           // onGenerateRoute: Router.generateRoute,
           routes: {
             IntroPage.routeName: (context) => IntroPage(),
@@ -32,6 +34,8 @@ class App extends StatelessWidget {
             HomePage.routeName: (context) => HomePage(),
             AboutPage.routeName: (context) => AboutPage(),
             LoginPage.routeName: (context) => LoginPage(),
+            LoginPage2.routeName: (context) => LoginPage2(),
+            LoginPage3.routeName: (context) => LoginPage3(),
           },
           navigatorObservers: [firebaseAnalyticsObserver],
         );
