@@ -15,7 +15,7 @@ class LoginPage3 extends StatefulWidget {
 class _LoginPage3State extends State<LoginPage3> {
   @override
   Widget build(BuildContext context) {
-    ScreenUtil.instance.init(context);
+    ScreenUtil.init(context);
     return Scaffold(
       floatingActionButton: floatingActionBottom,
       resizeToAvoidBottomPadding: false,

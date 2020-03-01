@@ -25,7 +25,7 @@ class App extends StatelessWidget {
         return MaterialApp(
           title: 'Modern Flutter',
           theme: appState.isDarkTheme() ? darkTheme : lightTheme,
-          initialRoute: LoginPage2.routeName,
+          initialRoute: LoginPage3.routeName,
           // onGenerateRoute: Router.generateRoute,
           routes: {
             IntroPage.routeName: (context) => IntroPage(),

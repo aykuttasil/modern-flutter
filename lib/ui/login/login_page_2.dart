@@ -37,7 +37,7 @@ class CustomShape extends StatefulWidget {
 class _CustomShapeState extends State<CustomShape> {
   @override
   Widget build(BuildContext context) {
-    ScreenUtil.instance.init(context);
+    ScreenUtil.init(context);
     return Center(
       child: Padding(
         padding: const EdgeInsets.all(25.0),

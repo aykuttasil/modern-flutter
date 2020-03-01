@@ -116,9 +116,9 @@ class UIHelper {
   static const Color FACEBOOK_COLOR = Color(0xFFF3B5998);
 
   // SPACE
-  static dynamicHeight(double height) => ScreenUtil.instance.setHeight(height);
+  static dynamicHeight(double height) => ScreenUtil().setHeight(height);
 
-  static dynamicWidth(double width) => ScreenUtil.instance.setWidth(width);
+  static dynamicWidth(double width) => ScreenUtil().setWidth(width);
 
-  static dynamicSp(double fontsize) => ScreenUtil.instance.setSp(fontsize);
+  static dynamicSp(double fontsize) => ScreenUtil().setSp(fontsize);
 }
