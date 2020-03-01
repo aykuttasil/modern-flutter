@@ -47,7 +47,7 @@ class LoginPage extends StatelessWidget {
             ),
             Text(
               "Aykut Asil",
-              style: Theme.of(context).textTheme.title,
+              style: Theme.of(context).textTheme.headline6,
             ),
             Text("Aykut Asil"),
           ],

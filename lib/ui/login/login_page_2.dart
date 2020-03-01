@@ -16,7 +16,6 @@ class _LoginPage2State extends State<LoginPage2> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: UIHelper.APRICOT_PRIMARY_COLOR,
-      //TODO ChangeListView
       body: ListView(children: <Widget>[
         Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -47,7 +46,7 @@ class _CustomShapeState extends State<CustomShape> {
           child: CustomPaint(
             painter: CurvePainter(),
             child: Container(
-              height: UIHelper.dynamicHeight(1500.0),
+              height: UIHelper.dynamicHeight(1300.0),
               width: UIHelper.dynamicWidth(800.0),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -64,21 +63,25 @@ class _CustomShapeState extends State<CustomShape> {
                   ),
                   _textField,
                   _passwordField,
-                  new ForgetPasswordButton(
+                  ForgetPasswordButton(
                     color: UIHelper.APRICOT_TEXT_COLOR,
                     rightPadding: 30,
                   ),
+                  Expanded(child: SizedBox()),
                   Padding(
-                    padding: const EdgeInsets.only(top: 80.0),
+                    padding: const EdgeInsets.only(top: 10.0),
                     child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
-                        SizedBox(width: 250),
                         IconButton(
-                          // TODO Control
                           icon: (!Platform.isIOS)
                               ? Icon(Icons.arrow_forward)
                               : Icon(Icons.arrow_forward_ios),
-                          onPressed: () {},
+                          onPressed: () {
+                            Scaffold.of(context).showSnackBar(SnackBar(
+                              content: Text("Selam"),
+                            ));
+                          },
                         ),
                       ],
                     ),
@@ -131,7 +134,7 @@ class CurvePainter extends CustomPainter {
     Paint paint = new Paint()..color = Colors.white;
     // create a path
     var path = Path();
-    path.moveTo(0, size.height * 0.75);
+    path.moveTo(0, size.height);
     path.quadraticBezierTo(size.width, size.height, size.width, size.height);
     path.lineTo(size.width, 0);
     path.lineTo(0, 0);
@@ -160,7 +163,7 @@ class ForgetPasswordButton extends StatelessWidget {
             height: 30,
             child: FlatButton(
               shape: RoundedRectangleBorder(
-                  borderRadius: new BorderRadius.circular(50.0)),
+                  borderRadius: BorderRadius.circular(50.0)),
               onPressed: () {},
               child: Text(UIHelper.forgetPassword,
                   style: TextStyle(fontSize: 15, color: color)),

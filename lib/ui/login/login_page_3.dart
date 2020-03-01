@@ -74,7 +74,7 @@ class _LoginPage3State extends State<LoginPage3> {
                       children: <Widget>[
                         _textField(UIHelper.email, false),
                         _textField(UIHelper.password, true),
-                        new ForgetPasswordButton(
+                        ForgetPasswordButton(
                           color: UIHelper.WHITE,
                           rightPadding: 20,
                         ),
@@ -100,8 +100,8 @@ class _LoginPage3State extends State<LoginPage3> {
           cursorColor: UIHelper.WHITE,
           maxLines: 1,
           decoration: InputDecoration(
-            border: new UnderlineInputBorder(
-                borderSide: new BorderSide(color: Colors.white)),
+            border: UnderlineInputBorder(
+                borderSide: BorderSide(color: Colors.white)),
             hintText: text,
             hintStyle: TextStyle(color: Colors.white),
           ),
