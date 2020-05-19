@@ -1,6 +1,6 @@
-import 'package:modern_flutter/ui/base/BaseViewmodel.dart';
+import 'package:modern_flutter/ui/base/base_data.dart';
 
-class HomeViewModel extends BaseViewModel {
+class HomeData extends BaseViewModel {
   String name = "Aykut Asil";
 
   void changeName() {

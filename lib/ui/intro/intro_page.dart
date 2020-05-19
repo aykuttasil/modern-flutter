@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:modern_flutter/ui/home/HomePage.dart';
+import 'package:modern_flutter/ui/home/home_page.dart';
 import 'package:modern_flutter/ui/login/login_page.dart';
-import 'package:modern_flutter/ui/widgets/MyButton.dart';
+import 'package:modern_flutter/ui/widgets/my_button.dart';
 
 class IntroPage extends StatefulWidget {
   static const String routeName = "/";
@@ -13,22 +13,22 @@ class IntroPage extends StatefulWidget {
 }
 
 class _IntroPageState extends State<IntroPage> {
-  PageController _pageController;
-  List<String> _listPath = [
+  PageController pageController;
+  final List<String> listPath = [
     "assets/svg/undraw_a_day_off_w9ex.svg",
     "assets/svg/undraw_online_everywhere_cd90.svg"
   ];
-  double _sliderValue = 0;
+  double sliderValue = 0;
 
   @override
   void initState() {
     super.initState();
-    _pageController = PageController();
+    pageController = PageController();
   }
 
   @override
   void dispose() {
-    _pageController.dispose();
+    pageController.dispose();
     super.dispose();
   }
 
@@ -46,13 +46,13 @@ class _IntroPageState extends State<IntroPage> {
                 pageSnapping: false,
                 itemBuilder: (context, position) {
                   return SvgPicture.asset(
-                    _listPath[position],
+                    listPath[position],
                     alignment: Alignment.topCenter,
                   );
                 },
                 physics: AlwaysScrollableScrollPhysics(),
-                itemCount: _listPath.length,
-                controller: _pageController,
+                itemCount: listPath.length,
+                controller: pageController,
               ),
             ),
             Expanded(
@@ -60,15 +60,15 @@ class _IntroPageState extends State<IntroPage> {
                 child: Column(
                   children: <Widget>[
                     Slider(
-                      value: _sliderValue,
+                      value: sliderValue,
                       onChanged: (value) {
                         // logger.d(value);
                         setState(() {
-                          _sliderValue = value;
-                          _pageController.jumpTo(value * w / 2);
+                          sliderValue = value;
+                          pageController.jumpTo(value * w / 2);
                         });
                       },
-                      max: _listPath.length.toDouble(),
+                      max: listPath.length.toDouble(),
                     ),
                     Expanded(child: SizedBox()),
                     MyButton(
@@ -93,19 +93,5 @@ class _IntroPageState extends State<IntroPage> {
         ),
       ),
     );
-
-    /*
-    return PageView(
-      children: <Widget>[
-        Container(color: Colors.brown),
-        Container(color: Colors.black),
-        Container(color: Colors.cyan)
-      ],
-    );
-       */
-  }
-
-  Widget _buildFirstPage() {
-    return Container();
   }
 }

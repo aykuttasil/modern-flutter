@@ -1,7 +1,7 @@
 import 'package:logger/logger.dart';
 
 final logger = Logger(
-  filter: DebugFilter(),
+  filter: DevelopmentFilter(),
   printer: PrettyPrinter(),
   output: ConsoleOutput(),
 );

@@ -150,8 +150,7 @@ class ForgetPasswordButton extends StatelessWidget {
   final Color color;
   final double rightPadding;
 
-  const ForgetPasswordButton({Key key, this.color, this.rightPadding})
-      : super(key: key);
+  ForgetPasswordButton({Key key, this.color, this.rightPadding});
 
   @override
   Widget build(BuildContext context) {
