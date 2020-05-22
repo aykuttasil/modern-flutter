@@ -40,14 +40,12 @@ class HomePage extends BasePage {
                               ? "isDark"
                               : "isLight"),
                           RaisedButton(
-                            color: Colors.white54,
                             child: Text("Press"),
                             onPressed: () {
                               Navigator.pushNamed(context, AboutPage.routeName);
                             },
                           ),
                           RaisedButton(
-                            color: Colors.white54,
                             child: Text("Change Name"),
                             onPressed: () {
                               homeData.changeName();
