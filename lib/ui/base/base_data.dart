@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 enum ViewState { LOADING, IDLE }
 
-abstract class BaseViewModel with ChangeNotifier {
+abstract class BaseData with ChangeNotifier {
   var _streamController = StreamController<ViewState>();
 
   get viewStateStream => _streamController.stream;

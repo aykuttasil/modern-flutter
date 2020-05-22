@@ -1,3 +1,3 @@
-import 'package:flutter/material.dart';
+import 'package:modern_flutter/ui/base/base_data.dart';
 
-class SplashViewModel with ChangeNotifier {}
+class SplashData extends BaseData {}

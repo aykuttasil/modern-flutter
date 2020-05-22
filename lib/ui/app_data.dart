@@ -1,8 +1,7 @@
 import 'dart:core';
+import 'package:modern_flutter/ui/base/base_data.dart';
 
-import 'package:flutter/material.dart';
-
-class AppData with ChangeNotifier {
+class AppData extends BaseData {
   bool _isDarkTheme = false;
 
   bool get isDarkTheme => _isDarkTheme;

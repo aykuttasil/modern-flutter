@@ -1,24 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:modern_flutter/ui/home/home_page.dart';
 
-class SplashPage extends StatefulWidget {
+class SplashPage extends StatelessWidget {
   static const String routeName = "/splash";
 
   @override
-  _SplashPageState createState() => _SplashPageState();
-}
-
-class _SplashPageState extends State<SplashPage> {
-  @override
-  void initState() {
+  Widget build(BuildContext context) {
     Future.delayed(Duration(seconds: 2), () {
       Navigator.pushReplacementNamed(context, HomePage.routeName);
     });
-    super.initState();
-  }
 
-  @override
-  Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
         child: Container(

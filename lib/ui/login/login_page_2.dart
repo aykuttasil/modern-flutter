@@ -40,7 +40,7 @@ class _CustomShapeState extends State<CustomShape> {
     ScreenUtil.init(context);
     return Center(
       child: Padding(
-        padding: const EdgeInsets.all(25.0),
+        padding: EdgeInsets.all(25.0),
         child: ClipRRect(
           borderRadius: BorderRadius.circular(20),
           child: CustomPaint(
@@ -52,7 +52,7 @@ class _CustomShapeState extends State<CustomShape> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   Padding(
-                    padding: const EdgeInsets.fromLTRB(20, 30, 20, 10),
+                    padding: EdgeInsets.fromLTRB(20, 30, 20, 10),
                     child: Text(
                       UIHelper.login.toUpperCase(),
                       style: TextStyle(
@@ -69,7 +69,7 @@ class _CustomShapeState extends State<CustomShape> {
                   ),
                   Expanded(child: SizedBox()),
                   Padding(
-                    padding: const EdgeInsets.only(top: 10.0),
+                    padding: EdgeInsets.only(top: 10.0),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
@@ -96,7 +96,7 @@ class _CustomShapeState extends State<CustomShape> {
   }
 
   Widget get _textField => Padding(
-        padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
+        padding: EdgeInsets.fromLTRB(20, 10, 20, 10),
         child: TextField(
           style: TextStyle(color: UIHelper.APRICOT_TEXT_COLOR),
           textAlign: TextAlign.left,
@@ -112,7 +112,7 @@ class _CustomShapeState extends State<CustomShape> {
       );
 
   Widget get _passwordField => Padding(
-        padding: const EdgeInsets.fromLTRB(20, 30, 20, 30),
+        padding:  EdgeInsets.fromLTRB(20, 30, 20, 30),
         child: TextField(
           style: TextStyle(color: UIHelper.APRICOT_TEXT_COLOR),
           textAlign: TextAlign.left,
