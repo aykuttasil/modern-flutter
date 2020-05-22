@@ -26,42 +26,36 @@ class HomePage extends BasePage {
                 appBar: AppBar(
                   title: Text("Modern Flutter"),
                 ),
-                body: Container(
-                  width: double.infinity,
-                  child: LayoutBuilder(
-                    builder: (context, _) {
-                      if (snapshot.data == ViewState.LOADING) {
-                        return Center(child: CircularProgressIndicator());
-                      }
-                      return Column(
-                        mainAxisSize: MainAxisSize.max,
+                body: LayoutBuilder(
+                  builder: (context, _) {
+                    if (snapshot.data == ViewState.LOADING) {
+                      return Center(child: CircularProgressIndicator());
+                    }
+                    return Center(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
                         children: <Widget>[
                           Text(context.read<AppData>().isDarkTheme
                               ? "isDark"
                               : "isLight"),
                           RaisedButton(
                             child: Text("Press"),
-                            onPressed: () {
-                              Navigator.pushNamed(context, AboutPage.routeName);
-                            },
+                            onPressed: () => Navigator.pushNamed(
+                                context, AboutPage.routeName),
                           ),
                           RaisedButton(
                             child: Text("Change Name"),
-                            onPressed: () {
-                              homeData.changeName();
-                            },
+                            onPressed: () => homeData.changeName(),
                           ),
                           Text(homeData.name)
                         ],
-                      );
-                    },
-                  ),
+                      ),
+                    );
+                  },
                 ),
                 floatingActionButton: FloatingActionButton(
                   child: Icon(Icons.forward),
-                  onPressed: () {
-                    context.read<AppData>().changeAppTheme();
-                  },
+                  onPressed: () => context.read<AppData>().changeAppTheme(),
                 ),
               );
             },
