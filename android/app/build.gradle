@@ -24,7 +24,7 @@ if (flutterVersionName == null) {
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
-apply plugin: 'io.fabric'
+apply plugin: 'com.google.firebase.crashlytics'
 
 android {
     compileSdkVersion 28
@@ -68,6 +68,9 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     def multidex_version = "2.0.1"
     implementation "androidx.multidex:multidex:$multidex_version"
+
+    implementation 'com.google.firebase:firebase-analytics-ktx:17.4.2'
+    implementation 'com.google.firebase:firebase-crashlytics:17.0.0'
 }
 
 apply plugin: 'com.google.gms.google-services'

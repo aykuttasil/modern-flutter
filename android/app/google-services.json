@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "381782928419",
-    "firebase_url": "https://modern-flutter-47b94.firebaseio.com",
-    "project_id": "modern-flutter-47b94",
-    "storage_bucket": "modern-flutter-47b94.appspot.com"
+    "project_number": "315061298424",
+    "firebase_url": "https://a2a-modern-flutter.firebaseio.com",
+    "project_id": "a2a-modern-flutter",
+    "storage_bucket": "a2a-modern-flutter.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:381782928419:android:ba3045e17c3c220af9d596",
+        "mobilesdk_app_id": "1:315061298424:android:51d1d45f48a79b5948470d",
         "android_client_info": {
           "package_name": "com.aykuttasil.modern_flutter"
         }
       },
       "oauth_client": [
         {
-          "client_id": "381782928419-ehfj6o5d2810b11qmffk15cf02ujdq43.apps.googleusercontent.com",
+          "client_id": "315061298424-pu0maq7ibh6scjd3dcfej7bfhr0em3bo.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCEErtm0WOYgC6XiDWMSDs-A1CMj4S5cs0"
+          "current_key": "AIzaSyAZpQpQKA_Og7eG8e-6s2Cr-CzZD-k2nzg"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "381782928419-ehfj6o5d2810b11qmffk15cf02ujdq43.apps.googleusercontent.com",
+              "client_id": "315061298424-pu0maq7ibh6scjd3dcfej7bfhr0em3bo.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
