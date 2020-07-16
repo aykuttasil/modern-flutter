@@ -112,7 +112,7 @@ class _CustomShapeState extends State<CustomShape> {
       );
 
   Widget get _passwordField => Padding(
-        padding:  EdgeInsets.fromLTRB(20, 30, 20, 30),
+        padding: EdgeInsets.fromLTRB(20, 30, 20, 30),
         child: TextField(
           style: TextStyle(color: UIHelper.APRICOT_TEXT_COLOR),
           textAlign: TextAlign.left,
