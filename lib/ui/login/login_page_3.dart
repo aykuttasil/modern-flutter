@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:modern_flutter/ui/widgets/linear_gradient_mask.dart';
 import 'package:modern_flutter/ui/widgets/my_input.dart';
 import 'package:modern_flutter/utils/ui_helper.dart';
@@ -15,9 +14,7 @@ class LoginPage3 extends StatefulWidget {
 
 class _LoginPage3State extends State<LoginPage3> {
   @override
-  Widget build(BuildContext context) {
-    ScreenUtil.init(context);
-
+  Widget build(BuildContext context) {  
     return Container(
       color: Colors.white,
       child: Stack(

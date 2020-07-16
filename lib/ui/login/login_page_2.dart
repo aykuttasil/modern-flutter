@@ -1,7 +1,6 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:modern_flutter/utils/ui_helper.dart';
 
 class LoginPage2 extends StatefulWidget {
@@ -37,7 +36,6 @@ class CustomShape extends StatefulWidget {
 class _CustomShapeState extends State<CustomShape> {
   @override
   Widget build(BuildContext context) {
-    ScreenUtil.init(context);
     return Center(
       child: Padding(
         padding: EdgeInsets.all(25.0),
