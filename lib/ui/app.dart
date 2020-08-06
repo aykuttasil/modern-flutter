@@ -1,17 +1,17 @@
 import 'package:firebase_analytics/observer.dart';
 import 'package:flutter/material.dart';
 import 'package:modern_flutter/common/locator.dart';
-import 'package:modern_flutter/common/themes.dart';
-import 'package:modern_flutter/ui/app_data.dart';
-import 'package:modern_flutter/ui/about/about_page.dart';
-import 'package:modern_flutter/ui/home/home_page.dart';
-import 'package:modern_flutter/ui/intro/intro_page.dart';
-import 'package:modern_flutter/ui/intro/intro_page_2.dart';
-import 'package:modern_flutter/ui/login/login_page.dart';
-import 'package:modern_flutter/ui/login/login_page_2.dart';
-import 'package:modern_flutter/ui/login/login_page_3.dart';
-import 'package:modern_flutter/ui/splash/splash_page.dart';
-import 'package:modern_flutter/utils/routes/FadeRoute.dart';
+import '../common/themes.dart';
+import 'app_data.dart';
+import 'about/about_page.dart';
+import 'home/home_page.dart';
+import 'intro/intro_page.dart';
+import 'intro/intro_page_2.dart';
+import 'login/login_page.dart';
+import 'login/login_page_2.dart';
+import 'login/login_page_3.dart';
+import 'splash/splash_page.dart';
+import '../utils/routes/FadeRoute.dart';
 import 'package:provider/provider.dart';
 
 class App extends StatelessWidget {

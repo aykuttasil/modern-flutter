@@ -1,5 +1,5 @@
 import 'dart:core';
-import 'package:modern_flutter/ui/base/base_data.dart';
+import 'base/base_data.dart';
 
 class AppData extends BaseData {
   bool _isDarkTheme = false;

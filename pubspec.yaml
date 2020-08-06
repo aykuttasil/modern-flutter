@@ -4,7 +4,7 @@ description: Modern Flutter App Structure
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.6.0 <3.0.0"
+  sdk: ">=2.9.0 <3.0.0"
 
 dependencies:
   flutter:
@@ -30,7 +30,7 @@ dependencies:
   cloud_firestore: ^0.13.7
   location: ^3.0.2
   logger: ^0.9.1
-  flutter_svg: ^0.17.4
+  flutter_svg: ^0.18.0
   polygon_clipper: ^1.0.2
   bottom_navy_bar: ^5.3.2
   dough: ^0.2.2
