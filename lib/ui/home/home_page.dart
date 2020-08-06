@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:modern_flutter/common/locator.dart';
-import 'package:modern_flutter/common/logger.dart';
-import 'package:modern_flutter/ui/app_data.dart';
-import 'package:modern_flutter/ui/about/about_page.dart';
-import 'package:modern_flutter/ui/base/base_page.dart';
-import 'package:modern_flutter/ui/base/base_data.dart';
-import 'package:modern_flutter/ui/home/home_data.dart';
+import '../../common/locator.dart';
+import '../../common/logger.dart';
+import '../app_data.dart';
+import '../about/about_page.dart';
+import '../base/base_page.dart';
+import '../base/base_data.dart';
+import 'home_data.dart';
 import 'package:provider/provider.dart';
 
 class HomePage extends BasePage {
