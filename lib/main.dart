@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -9,11 +10,11 @@ import 'package:modern_flutter/ui/app_data.dart';
 import 'package:provider/provider.dart';
 
 void main() {
-  Crashlytics.instance.enableInDevMode = true;
-  FlutterError.onError = Crashlytics.instance.recordFlutterError;
-  setupLocator();
-
   WidgetsFlutterBinding.ensureInitialized();
+
+  //FirebaseCrashlytics.instance.setCrashlyticsCollectionEnabled(true);
+  //FlutterError.onError = FirebaseCrashlytics.instance.recordFlutterError;
+  setupLocator();
 
   runZonedGuarded(() async {
     await SystemChrome.setEnabledSystemUIOverlays(
@@ -30,6 +31,6 @@ void main() {
       ),
     );
   }, (err, stack) {
-    Crashlytics.instance.recordError(err, stack);
+    FirebaseCrashlytics.instance.recordError(err, stack);
   });
 }
