@@ -4,7 +4,7 @@ import 'package:modern_flutter/common/locator.dart';
 import 'package:provider/provider.dart';
 
 import '../common/themes.dart';
-import '../utils/routes/FadeRoute.dart';
+import '../utils/routes/fade_route.dart';
 import 'about/about_page.dart';
 import 'app_data.dart';
 import 'home/home_page.dart';
@@ -18,7 +18,7 @@ import 'splash/splash_page.dart';
 class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    FirebaseAnalyticsObserver firebaseAnalyticsObserver =
+    final FirebaseAnalyticsObserver firebaseAnalyticsObserver =
         locator<FirebaseAnalyticsObserver>();
 
     return MaterialApp(

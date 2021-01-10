@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:modern_flutter/utils/ui_helper.dart';
 
 class LoginPage2 extends StatefulWidget {
-  static const String routeName = "/login2";
+  static const String routeName = '/login2';
 
   @override
   _LoginPage2State createState() => _LoginPage2State();
@@ -38,7 +38,7 @@ class _CustomShapeState extends State<CustomShape> {
   Widget build(BuildContext context) {
     return Center(
       child: Padding(
-        padding: EdgeInsets.all(25.0),
+        padding: const EdgeInsets.all(25.0),
         child: ClipRRect(
           borderRadius: BorderRadius.circular(20),
           child: CustomPaint(
@@ -50,10 +50,10 @@ class _CustomShapeState extends State<CustomShape> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   Padding(
-                    padding: EdgeInsets.fromLTRB(20, 30, 20, 10),
+                    padding: const EdgeInsets.fromLTRB(20, 30, 20, 10),
                     child: Text(
                       UIHelper.login.toUpperCase(),
-                      style: TextStyle(
+                      style: const TextStyle(
                         color: UIHelper.BLACK,
                         fontSize: 30,
                       ),
@@ -65,19 +65,19 @@ class _CustomShapeState extends State<CustomShape> {
                     color: UIHelper.APRICOT_TEXT_COLOR,
                     rightPadding: 30,
                   ),
-                  Expanded(child: SizedBox()),
+                  const Expanded(child: SizedBox()),
                   Padding(
-                    padding: EdgeInsets.only(top: 10.0),
+                    padding: const EdgeInsets.only(top: 10.0),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         IconButton(
                           icon: (!Platform.isIOS)
-                              ? Icon(Icons.arrow_forward)
-                              : Icon(Icons.arrow_forward_ios),
+                              ? const Icon(Icons.arrow_forward)
+                              : const Icon(Icons.arrow_forward_ios),
                           onPressed: () {
-                            Scaffold.of(context).showSnackBar(SnackBar(
-                              content: Text("Selam"),
+                            Scaffold.of(context).showSnackBar(const SnackBar(
+                              content: Text('Selam'),
                             ));
                           },
                         ),

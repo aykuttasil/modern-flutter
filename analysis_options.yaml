@@ -1,0 +1,7 @@
+include: package:lint/analysis_options.yaml
+
+# Custom Rules
+linter:
+  rules:
+    sort_constructors_first: true
+    prefer_single_quotes: true

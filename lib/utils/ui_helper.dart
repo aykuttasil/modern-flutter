@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class UIHelper {
+mixin UIHelper {
   // STRING
-  static final String createAccount = "Create\nAccount";
-  static final String welcomeBack = "Welcome\nBack";
+  static const String createAccount = 'Create\nAccount';
+  static const String welcomeBack = 'Welcome\nBack';
   static final String name = "Name";
   static final String hello = "Hello";
   static final String email = "Email address";
@@ -109,16 +109,16 @@ class UIHelper {
   static const Color SPOTIFY_SHADOW = Color(0x401DB954);
   static const Color WHITE = Colors.white;
   static const Color BLACK = Colors.black;
-  static const Color THEME_PRIMARY = Color(0XFF575C79);
-  static const Color THEME_LIGHT = Color(0XFF8489A8);
-  static const Color THEME_DARK = Color(0XFF2D334D);
-  static const Color BACKGROUND_COLOR = Color(0XFFAEB2D1);
-  static const Color FACEBOOK_COLOR = Color(0xFFF3B5998);
+  static const Color THEME_PRIMARY = Color(0xff575c79);
+  static const Color THEME_LIGHT = Color(0xff8489a8);
+  static const Color THEME_DARK = Color(0xff2d334d);
+  static const Color BACKGROUND_COLOR = Color(0xffaeb2d1);
+  static const Color FACEBOOK_COLOR = Color(0xff3b5998);
 
   // SPACE
-  static dynamicHeight(double height) => ScreenUtil().setHeight(height);
+  static double dynamicHeight(double height) => ScreenUtil().setHeight(height);
 
-  static dynamicWidth(double width) => ScreenUtil().setWidth(width);
+  static double dynamicWidth(double width) => ScreenUtil().setWidth(width);
 
-  static dynamicSp(double fontsize) => ScreenUtil().setSp(fontsize);
+  static double dynamicSp(double fontsize) => ScreenUtil().setSp(fontsize);
 }
